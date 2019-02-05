@@ -1,0 +1,36 @@
+<html>
+   <head>
+   <body>
+
+     <h1>
+     This is an important header
+     </h1>
+     <ol>
+     <li>Item - first one</li>
+     <li>second one</li>
+     </ol>
+     <h3>
+     not so important header
+     </h3>
+
+         <table>
+            <tr>
+               <td colspan="3">
+                  <input type="text" id="display" disabled>
+               </td>
+            </tr>
+            <tr>
+               <td><input type="button" value="one" onclick="display.value += '1'"></td>
+               <td><input type="button" value="two" onclick="display.value += '2'"></td>
+               <td><input type="button" value="+" onclick="display.value += '+'"></td>
+            </tr>
+            <tr>
+               <td><input type="button" id="clear" name="clear" value="c" onclick="display.value = ''"></td>
+                <td><input type="button" id="clear" name="clear" value="0" onclick="display.value += '0'"></td>
+               <td><input type="button" name="zero" value="=" onclick="display.value = eval(display.value)"></td>
+            </tr>
+         </table>
+
+   </body>
+   </head>
+</html>
